@@ -1,0 +1,42 @@
+/* .card {
+  display: flex;
+  gap: 24px;
+  padding: 24px;
+
+  border-radius: 20px;
+  border: 1px solid rgba(16, 24, 40, 0.2);
+  background-color: #fff;
+} */
+
+.cardImg {
+  width: 290px;
+  height: 310px;
+  border-radius: 10px;
+}
+
+.cardInfo {
+  display: flex;
+  width: 526px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  flex-shrink: 0;
+}
+
+.cardItem {
+  display: flex;
+  gap: 24px;
+  padding: 24px;
+
+  border-radius: 20px;
+  border: 1px solid rgba(16, 24, 40, 0.2);
+  background-color: #fff;
+}
+.supportingText {
+  color: #475467;
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}

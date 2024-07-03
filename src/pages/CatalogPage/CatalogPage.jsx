@@ -1,5 +1,12 @@
-const CatalogPage = () => {
-    return <>CatalogPage</>
-}
+import CardList from '../../components/CardList/CardList';
+import Layout from '../../components/Layout/Layout';
 
-export default CatalogPage
+const CatalogPage = () => {
+  return (
+    <Layout>
+      <CardList />
+    </Layout>
+  );
+};
+
+export default CatalogPage;
