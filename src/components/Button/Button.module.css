@@ -1,0 +1,16 @@
+.button {
+  display: inline-flex;
+  padding: 16px 60px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #ffffff;
+
+  border-radius: 200px;
+  background-color: #e44848;
+  transition: background-color 300ms ease-in-out;
+
+  &:hover {
+    background-color: #d84343;
+  }
+}
