@@ -14,8 +14,8 @@
 .header {
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 100px;
+  padding-left: 64px;
   margin-bottom: 20px;
-  border-bottom: solid 1px black;
+
   /* box-shadow: 2px 1px 3px rgba(0, 0, 0, 0.548); */
 }

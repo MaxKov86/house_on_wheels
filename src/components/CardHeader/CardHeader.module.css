@@ -71,6 +71,7 @@
   gap: 10px;
 }
 .favorites {
+  cursor: pointer;
   fill: none;
   stroke: #101828;
 }
@@ -82,4 +83,5 @@
 
 .active {
   fill: red;
+  stroke: red;
 }

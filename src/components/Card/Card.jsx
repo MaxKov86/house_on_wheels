@@ -6,6 +6,7 @@ import Tab from '../Tab/Tab';
 import css from './Card.module.css';
 import DitailsModal from '../DitailsModal/DitailsModal';
 import CardDitails from '../CardDitails/CardDitails';
+import sprite from '../../assets/symbol-defs.svg';
 
 const Card = ({ advert }) => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -27,31 +28,31 @@ const Card = ({ advert }) => {
         <ul className={css.segmentedPicker}>
           <Tab>
             <svg className={css.svg} width="18.447px" height="18.447px">
-              <use href="/public/icons/symbol-defs.svg#icon-Vertical-container-3"></use>
+              <use href={`${sprite}#icon-Vertical-container-3`}></use>
             </svg>
             <p>2 Adults</p>
           </Tab>
           <Tab>
             <svg className={css.svg} width="20" height="20">
-              <use href="/public/icons/symbol-defs.svg#icon-Container"></use>
+              <use href={`${sprite}#icon-Container`}></use>
             </svg>
             <p>Automatic</p>
           </Tab>
           <Tab>
             <svg className={css.svg} width="20" height="20">
-              <use href="/public/icons/symbol-defs.svg#icon-Vertical-container"></use>
+              <use href={`${sprite}#icon-Vertical-container`}></use>
             </svg>
             <p>Petrol</p>
           </Tab>
           <Tab>
             <svg className={css.svg} width="20" height="20" fill="none">
-              <use href="/public/icons/symbol-defs.svg#icon-Horizontal-container"></use>
+              <use href={`${sprite}#icon-Horizontal-container`}></use>
             </svg>
             <p>Kitchen</p>
           </Tab>
           <Tab>
             <svg className={css.svg} width="20" height="20" fill="none">
-              <use href="/public/icons/symbol-defs.svg#icon-Container-1"></use>
+              <use href={`${sprite}#icon-Container-1`}></use>
             </svg>
             <p>1 Beds</p>
           </Tab>
@@ -81,7 +82,7 @@ const Card = ({ advert }) => {
         <BtnShowModal isOpen={openModal}>Show more</BtnShowModal>
       </div>
       <DitailsModal isOpen={modalOpen} closeModal={closeModal}>
-        <CardDitails closeModal={closeModal} advert={advert}/>
+        <CardDitails closeModal={closeModal} advert={advert} />
       </DitailsModal>
     </li>
   );
