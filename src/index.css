@@ -1,11 +1,17 @@
 @font-face {
   font-family: 'Inter';
-  src: url('./font/Inter-Black.ttf');
+  src: url('./font/Inter-Regular.ttf');
 }
 
 body {
   font-family: 'Inter' sans-serif;
   line-height: 1.5;
+}
+
+body::-webkit-scrollbar{
+  width: 5px;
+  background-color: grey;
+  border-radius: 7px;
 }
 
 h1,
@@ -28,8 +34,13 @@ ol {
   margin: 0;
   padding: 0;
 }
-
+input {
+  margin: 0;
+}
 img {
   display: block;
   max-width: 100%;
+}
+button {
+  padding: 0;
 }

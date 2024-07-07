@@ -1,0 +1,16 @@
+.tab {
+  display: flex;
+  padding: 12px 18px;
+  align-items: center;
+  gap: 8px;
+  border-radius: 100px;
+  background: #f2f4f7;
+
+  color: #101828;
+  font-family: 'Inter';
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}

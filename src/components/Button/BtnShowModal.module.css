@@ -13,8 +13,10 @@
   letter-spacing: -0.08px;
 
   border: none;
+  outline: none;
   border-radius: 200px;
   background-color: #e44848;
+  cursor: pointer;
   transition: background-color 300ms ease-in-out;
 }
 

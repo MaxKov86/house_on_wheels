@@ -1,0 +1,58 @@
+.filtersContainer {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+}
+.location {
+  display: flex;
+  padding: 18px 218px 18px 18px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  background: #f7f7f7;
+}
+
+.checkbox {
+  appearance: none;
+}
+/* .button {
+  width: 113px;
+  display: flex;
+  height: 95px;
+  padding: 17px 40px;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border-radius: 10px;
+  border: 1px solid #e44848;
+
+  mix-blend-mode: multiply;
+
+  cursor: pointer;
+} */
+.label {
+  width: 111px;
+  height: 93px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border-radius: 10px;
+  border: 1px solid rgba(16, 24, 40, 0.2);
+
+  mix-blend-mode: multiply;
+
+  cursor: pointer;
+}
+.checked {
+  border: 1px solid #e44848;
+}
+.checkboxContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}

@@ -10,7 +10,8 @@
 
 .cardImg {
   width: 290px;
-  height: 310px;
+  height: 314px;
+  flex-shrink: 0;
   border-radius: 10px;
 }
 
@@ -24,19 +25,38 @@
 }
 
 .cardItem {
-  display: flex;
+  /* width: fit-content; */
+  /* display: flex;
   gap: 24px;
   padding: 24px;
 
   border-radius: 20px;
   border: 1px solid rgba(16, 24, 40, 0.2);
-  background-color: #fff;
+  background-color: #fff; */
+  display: flex;
+  width: 840px;
+  align-items: flex-start;
+  gap: 24px;
 }
 .supportingText {
+  width: 524px;
   color: #475467;
-
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: 'Inter';
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
+}
+.segmentedPicker {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.svg {
+  /* fill: none; */
+  stroke: #101828;
 }
