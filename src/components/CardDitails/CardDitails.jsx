@@ -1,17 +1,21 @@
 import css from './CardDitails.module.css';
+import sprite from '../../assets/symbol-defs.svg';
+import Features from '../Features/Features';
+import Reviews from '../Reviews/Reviews';
+
 const CardDitails = ({ closeModal, advert }) => {
   return (
-    <div>
+    <div className={css.ditailsContainer}>
       <div className={css.header}>
         <div className={css.headerTop}>
           <h1 className={css.headerTopName}>{advert.name}</h1>
           <svg className={css.closeBtn} onClick={closeModal} stroke="black">
-            <use href="/icons/symbol-defs.svg#icon-close"></use>
+            <use href={`${sprite}#icon-close`}></use>
           </svg>
         </div>
         <div className={css.ratingAndLocation}>
           <svg className={css.star} width="16" height="16">
-            <use href="/assets/symbol-defs.svg#icon-star"></use>
+            <use href={`${sprite}#icon-star`}></use>
           </svg>
           <span className={css.reviews}>
             {advert.rating}({advert.reviews.length} reviews)
@@ -23,7 +27,7 @@ const CardDitails = ({ closeModal, advert }) => {
             fill="none"
             stroke="black"
           >
-            <use href="/assets/symbol-defs.svg#icon-map-pin"></use>
+            <use href={`${sprite}#icon-map-pin`}></use>
           </svg>
           <span className={css.location}>{advert.location}</span>
         </div>
@@ -50,6 +54,10 @@ const CardDitails = ({ closeModal, advert }) => {
         ></li>
       </ul>
       <p className={css.supportingText}>{advert.description}</p>
+      <div className={css.container}>
+        <Features />
+        <Reviews />
+      </div>
     </div>
   );
 };

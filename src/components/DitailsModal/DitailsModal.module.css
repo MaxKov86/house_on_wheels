@@ -13,7 +13,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 720px;
   display: inline-flex;
   outline: none;
   padding: 40px;
@@ -24,9 +23,17 @@
 
   border-radius: 20px;
   background: #fff;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
-/* .modal::-webkit-scrollbar-thumb {
-  border-radius: 20px;
-  background: #d9d9d9;
-} */
+.modal::-webkit-scrollbar {
+  width: 8px;
+  border: 10px;
+}
+
+.modal::-webkit-scrollbar-thumb {
+  border-radius: 7px;
+  background-color: #d9d9d9;
+}
+.modal::-webkit-scrollbar-track-piece {
+  height: 264px;
+}

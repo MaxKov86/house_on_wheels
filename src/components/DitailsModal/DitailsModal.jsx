@@ -1,3 +1,4 @@
+
 import css from './DitailsModal.module.css';
 import Modal from 'react-modal';
 
@@ -12,6 +13,7 @@ const DitailsModal = ({ children, isOpen, closeModal }) => {
       isOpen={isOpen}
     >
       {children}
+      
     </Modal>
   );
 };

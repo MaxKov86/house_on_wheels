@@ -8,12 +8,6 @@ body {
   line-height: 1.5;
 }
 
-body::-webkit-scrollbar{
-  width: 5px;
-  background-color: grey;
-  border-radius: 7px;
-}
-
 h1,
 h2,
 h3,
