@@ -1,12 +1,15 @@
-import Button from '../../components/Button/Button';
-import Layout from '../../components/Layout/Layout';
+// import Layout from '../../components/Layout/Layout';
+import css from './HomePage.module.css';
 
 const HomePage = () => {
   return (
-    <Layout>
-      <h1>Home Page</h1>
-      <Button type="button">Send</Button>
-    </Layout>
+    <div className={css.home}>
+      <img
+        className={css.img}
+        src="/hanson-lu--Avc2AiE1_Q-unsplash.jpg"
+        alt="photo"
+      />
+    </div>
   );
 };
 

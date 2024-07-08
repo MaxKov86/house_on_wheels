@@ -17,9 +17,9 @@ export const getAllFavorites = createAsyncThunk(
 
 export const addFavoritesCard = createAsyncThunk(
   'favorites/addFavoritesCard',
-  async (data, thunkApi) => {
+  async (_, thunkApi) => {
     try {
-      const response = await axios.post('/favorites');
+      const response = await axios.post(`/favorites`);
       return response.data;
     } catch (error) {
       return thunkApi.rejectWithValue(error.message);
